@@ -28,7 +28,7 @@ $ echo "Data Sciences Institute"
 
 1. Evaluation is the biggest practical hurdle to AI adoption; system-level failures (hallucinations, unsafe outputs) carry real legal and reputational consequences.
 2. Exact evaluation (functional correctness, similarity metrics) gives unambiguous scores but covers only narrow, well-defined tasks.
-3. AI-as-a-judge enables scalable subjective evaluation but introduces inherent biases — position, verbosity, and self-preference — that must be actively managed.
+3. AI-as-a-judge enables scalable subjective evaluation but introduces inherent biases (position, verbosity, and self-preference) that must be actively managed.
 4. Factual consistency requires structured approaches: self-verification, search-augmented factuality, and entailment each address different failure modes.
 5. Safety, instruction-following, and latency/cost are first-class evaluation criteria, not secondary concerns.
 6. Model selection follows a funnel: filter by license/privacy → narrow with benchmarks → run custom evaluation → monitor in production.
@@ -878,14 +878,19 @@ Code generation capability | pass@1 |  HumanEval | > 90% | >95%
 
 ---
 
-## Open Source vs Proprietary Models
+## Open vs Proprietary Models
 
-![bg right:40% w:700](./images/03_open_vs_closed_infra.png)
 - Proprietary models often provide cutting-edge performance via APIs.
 - Open source models allow customization and on-premises deployment.
-- API services now exist that wrap open source models with added infrastructure (Nagle and Yue, 2025).
+- API services now exist that wrap open source models with added infrastructure.
 - Inference and fine-tuning services for open source models are available from cloud providers like Azure, AWS, or GCP.
 - Teams must weigh performance against control, cost, and privacy needs.
+
+---
+## Open Models and Third-Party Inference
+
+![](./images/03_open_vs_closed_infra.png)
+<center>(Nagle and Yue, 2025)</center>
 
 ---
 
@@ -1010,7 +1015,7 @@ Performance comparison of closed-source and open-weight large language models on
 
 1. Evaluation is the biggest practical hurdle to AI adoption; system-level failures (hallucinations, unsafe outputs) carry real legal and reputational consequences.
 2. Exact evaluation (functional correctness, similarity metrics) gives unambiguous scores but covers only narrow, well-defined tasks.
-3. AI-as-a-judge enables scalable subjective evaluation but introduces inherent biases — position, verbosity, and self-preference — that must be actively managed.
+3. AI-as-a-judge enables scalable subjective evaluation but introduces inherent biases (position, verbosity, and self-preference) that must be actively managed.
 4. Factual consistency requires structured approaches: self-verification, search-augmented factuality, and entailment each address different failure modes.
 5. Safety, instruction-following, and latency/cost are first-class evaluation criteria, not secondary concerns.
 6. Model selection follows a funnel: filter by license/privacy → narrow with benchmarks → run custom evaluation → monitor in production.
